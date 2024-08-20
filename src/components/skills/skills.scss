@@ -1,0 +1,61 @@
+//card styling
+
+.card {
+  border: 3px solid #eab308;
+  color: #6b7280;
+  max-width: 485px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px 0;
+    color: #fff;
+  }
+  .skillImg {
+    width: 100px;
+  }
+}
+
+//card styling ends here
+
+#section3 {
+  background: #111827;
+  padding: 70px 0 0;
+  .wrap3 {
+    margin: 0 100px;
+    color: #fff;
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      span {
+        color: #eab308;
+      }
+    }
+
+    .outPara {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 500;
+      color: #6b7280;
+      padding: 20px 0;
+      max-width: 550px;
+      text-align: left;
+    }
+
+    .cards-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      // row-gap: 50px;
+      column-gap: 150px;
+    }
+  }
+}

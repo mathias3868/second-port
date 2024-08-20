@@ -1,0 +1,60 @@
+// card styling starts here
+.card-reco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+
+  .recomendImage {
+    position: relative;
+    right: 18%;
+
+    .recomendImg {
+      width: 600px;
+      height: 450px;
+    }
+  }
+  .recomend-content {
+    position: absolute;
+    z-index: 100;
+    left: 48%;
+    margin-top: 30px;
+    width: 500px;
+    height: 250px;
+    background: #111827;
+    color: #6b7280;
+    // border: 2px solid red;
+    padding: 20px;
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 500;
+      color: #6b7280;
+      padding: 20px 0;
+      max-width: 550px;
+      text-align: left;
+    }
+    .quote {
+      color: #eab308;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .RecomndName {
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      color: #fff;
+      // padding: 20px 0;
+      text-align: left;
+    }
+  }
+}
+// card styling ends here
+
+#section4 {
+  padding: 70px 0;
+  .carousel {
+    background: #020617;
+    padding: 70px 100px;
+  }
+}

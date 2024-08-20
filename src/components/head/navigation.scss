@@ -1,0 +1,417 @@
+header {
+  background: #020617;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 5px;
+  .navItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+
+      color: #fff;
+      .logo-Me {
+        color: #eab308;
+      }
+    }
+    .navList {
+      margin-right: 80px;
+      min-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        list-style-type: none;
+        color: #fff;
+        .link {
+          color: #9ca3af;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            border-bottom: 4px solid rgb(223, 223, 66);
+            // color: rgb(223, 223, 66);
+            padding-bottom: 10px;
+            color: #fff;
+          }
+          &:active {
+            border-bottom: 2px solid rgb(223, 223, 66);
+            color: #fff;
+            padding-bottom: 10px;
+          }
+          // .active {
+          //   border-bottom: 2px solid rgb(223, 223, 66);
+          //   color: #fff;
+          //   padding-bottom: 10px;
+          // }
+        }
+      }
+    }
+
+    .navBtn {
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    // BURGER MENU
+    .burgerNav {
+      // border: 1px sol0,0,0,0.5);
+      // height: 40px;
+      // background: yellow;
+      #burger {
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        display: none;
+      }
+      .bugerList {
+        width: 200px;
+        height: 500px;
+        z-index: 2;
+        border-radius: 0 0 0 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        position: absolute;
+        right: 100px;
+        top: 10px;
+        transform: translateX(-20);
+        display: none;
+
+        li {
+          list-style-type: none;
+          color: #fff;
+          padding-top: 10px;
+          text-align: center;
+          .link {
+            color: #9ca3af;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.5ms;
+            &:hover {
+              // border-bottom: 4px solid rgb(223, 223, 66);
+              // color: rgb(223, 223, 66);
+              background: #eab308;
+              padding: 5px 50px;
+              border-radius: 5px;
+              // padding-bottom: 5px;
+              color: #fff;
+              // transform: translateX(-50);
+            }
+            &:active {
+              border-bottom: 2px solid rgb(223, 223, 66);
+              color: #fff;
+              padding-bottom: 10px;
+            }
+            // .active {
+            //   border-bottom: 2px solid rgb(223, 223, 66);
+            //   color: #fff;
+            //   padding-bottom: 10px;
+            // }
+          }
+        }
+      }
+    }
+
+    //BURGER MENU ENDS
+  }
+}
+
+//media query
+
+// XX-SM
+// XX-SM (<251px)
+@media (max-width: 250.9px) {
+  header {
+    background: #020617;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 2px;
+    .navItems {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 10px;
+
+      .logo {
+        font-size: 18px;
+        font-weight: 700;
+
+        color: #fff;
+        .logo-Me {
+          color: #eab308;
+        }
+      }
+      .navList {
+        margin-right: 80px;
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style-type: none;
+          color: #fff;
+          .link {
+            color: #9ca3af;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+              border-bottom: 4px solid rgb(223, 223, 66);
+              // color: rgb(223, 223, 66);
+              padding-bottom: 10px;
+              color: #fff;
+            }
+            &:active {
+              border-bottom: 2px solid rgb(223, 223, 66);
+              color: #fff;
+              padding-bottom: 10px;
+            }
+            // .active {
+            //   border-bottom: 2px solid rgb(223, 223, 66);
+            //   color: #fff;
+            //   padding-bottom: 10px;
+            // }
+          }
+        }
+      }
+
+      .navBtn {
+        padding: 10px 20px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      // BURGER MENU
+      .burgerNav {
+        // border: 1px sol0,0,0,0.5);
+        // height: 40px;
+        // background: yellow;
+        #burger {
+          color: #fff;
+          font-size: 30px;
+          cursor: pointer;
+          font-weight: 600;
+          display: none;
+        }
+        .bugerList {
+          width: 200px;
+          height: 500px;
+          z-index: 2;
+          border-radius: 0 0 0 10px;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          position: absolute;
+          right: 100px;
+          top: 10px;
+          transform: translateX(-20);
+          display: none;
+
+          li {
+            list-style-type: none;
+            color: #fff;
+            padding-top: 10px;
+            text-align: center;
+            .link {
+              color: #9ca3af;
+              font-size: 18px;
+              cursor: pointer;
+              transition: 0.5ms;
+              &:hover {
+                // border-bottom: 4px solid rgb(223, 223, 66);
+                // color: rgb(223, 223, 66);
+                background: #eab308;
+                padding: 5px 50px;
+                border-radius: 5px;
+                // padding-bottom: 5px;
+                color: #fff;
+                // transform: translateX(-50);
+              }
+              &:active {
+                border-bottom: 2px solid rgb(223, 223, 66);
+                color: #fff;
+                padding-bottom: 10px;
+              }
+              // .active {
+              //   border-bottom: 2px solid rgb(223, 223, 66);
+              //   color: #fff;
+              //   padding-bottom: 10px;
+              // }
+            }
+          }
+        }
+      }
+
+      //BURGER MENU ENDS
+    }
+  }
+}
+@media (min-width: 251px) and (max-width: 350.9px) {
+  header {
+    background: #020617;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 5px;
+    .navItems {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 100px;
+
+      .logo {
+        font-size: 40px;
+        font-weight: 700;
+
+        color: #fff;
+        .logo-Me {
+          color: #eab308;
+        }
+      }
+      .navList {
+        margin-right: 80px;
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style-type: none;
+          color: #fff;
+          .link {
+            color: #9ca3af;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+              border-bottom: 4px solid rgb(223, 223, 66);
+              // color: rgb(223, 223, 66);
+              padding-bottom: 10px;
+              color: #fff;
+            }
+            &:active {
+              border-bottom: 2px solid rgb(223, 223, 66);
+              color: #fff;
+              padding-bottom: 10px;
+            }
+            // .active {
+            //   border-bottom: 2px solid rgb(223, 223, 66);
+            //   color: #fff;
+            //   padding-bottom: 10px;
+            // }
+          }
+        }
+      }
+
+      .navBtn {
+        padding: 10px 20px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      // BURGER MENU
+      .burgerNav {
+        // border: 1px sol0,0,0,0.5);
+        // height: 40px;
+        // background: yellow;
+        #burger {
+          color: #fff;
+          font-size: 30px;
+          cursor: pointer;
+          font-weight: 600;
+          display: none;
+        }
+        .bugerList {
+          width: 200px;
+          height: 500px;
+          z-index: 2;
+          border-radius: 0 0 0 10px;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          position: absolute;
+          right: 100px;
+          top: 10px;
+          transform: translateX(-20);
+          display: none;
+
+          li {
+            list-style-type: none;
+            color: #fff;
+            padding-top: 10px;
+            text-align: center;
+            .link {
+              color: #9ca3af;
+              font-size: 18px;
+              cursor: pointer;
+              transition: 0.5ms;
+              &:hover {
+                // border-bottom: 4px solid rgb(223, 223, 66);
+                // color: rgb(223, 223, 66);
+                background: #eab308;
+                padding: 5px 50px;
+                border-radius: 5px;
+                // padding-bottom: 5px;
+                color: #fff;
+                // transform: translateX(-50);
+              }
+              &:active {
+                border-bottom: 2px solid rgb(223, 223, 66);
+                color: #fff;
+                padding-bottom: 10px;
+              }
+              // .active {
+              //   border-bottom: 2px solid rgb(223, 223, 66);
+              //   color: #fff;
+              //   padding-bottom: 10px;
+              // }
+            }
+          }
+        }
+      }
+
+      //BURGER MENU ENDS
+    }
+  }
+}
+
+// X-SM
+/* @media (min-width: 351px) and (max-width: 575.9px) {} */
+
+// SM
+/* @media (min-width: 576px) and (max-width: 767.9px) {} */
+
+// MD
+/* @media (min-width: 768px) and (max-width: 991.9px) {} */
+
+// LG
+/* @media (min-width: 992px) and (max-width: 1200.9px) {} */
+
+// XL
+/* @media (min-width: 1201px) and (max-width: 1499.9px) {} */
+
+// XXL
+/* @media (min-width: 1500px) {} */

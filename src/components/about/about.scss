@@ -1,0 +1,58 @@
+#section2 {
+  background-color: #020617;
+  padding: 70px 0 90px;
+  .wrap2 {
+    display: flex;
+    margin: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+    .aboutImg {
+      max-width: 400px;
+      .empty {
+        border: 10px solid #eab308;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        border-radius: 10px;
+        left: 7%;
+        bottom: -80%;
+      }
+      .man-Img {
+        width: 400px;
+        position: relative;
+        left: 8%;
+      }
+    }
+    .aboutContent {
+      max-width: 560px;
+      h2 {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        padding-bottom: 30px;
+        .logo-Me {
+          color: #eab308;
+        }
+      }
+      p {
+        color: #6b7280;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 500;
+        &:last-of-type {
+          padding-top: 30px;
+        }
+      }
+      button {
+        background: #eab308;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
