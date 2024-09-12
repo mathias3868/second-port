@@ -24,7 +24,12 @@ const About_Me = () => {
               I have worked with so many teams and I have make sure that during
               my days with them I deliver to any task given to me
             </p>
-            <button>
+            <button
+              onClick={() => {
+                document
+                  .querySelector("#section5")
+                  .scrollIntoView({ behavior: "smooth", offset: "-50" });
+              }}>
               <FaPhoneAlt /> Contact Me
             </button>
           </div>

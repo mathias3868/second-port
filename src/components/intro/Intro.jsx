@@ -15,7 +15,13 @@ const Intro = () => {
             visually Appealing and friendly Websites. I create a type web
             Application both web2 and web3
           </p>
-          <button className="introBtn">
+          <button
+            className="introBtn"
+            onClick={() => {
+              document
+                .querySelector("#section5")
+                .scrollIntoView({ behavior: "smooth", offset: "-60" });
+            }}>
             <img src={contactImg} alt="Contact Me" className="contact" /> Hire
             Me
           </button>

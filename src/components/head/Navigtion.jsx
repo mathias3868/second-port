@@ -10,7 +10,7 @@ const Navigtion = () => {
   const [bugerMenu, setBugerMenu] = useState(false);
 
   const toggleNavBar = () => {
-    setBurgerMenu(!burgerMenu);
+    setBugerMenu(!bugerMenu);
   };
 
   return (
@@ -81,69 +81,79 @@ const Navigtion = () => {
         {/* BURGER STARTS HERE */}
 
         <div className="burgerNav">
-          <MdOutlineStorage id="burger" onClick={() => toggleNavBar} />
-          <ul className="bugerList">
-            <li>
-              <Link
-                className="link"
-                activeClass="active"
-                to="section1"
-                spy="true"
-                smooth="true"
-                offset={-100}
-                duration={500}>
-                home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link"
-                activeClass="active"
-                to="section2"
-                spy="true"
-                smooth="true"
-                offset={-50}
-                duration={500}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link"
-                activeClass="active"
-                to="section3"
-                spy="true"
-                smooth="true"
-                offset={-40}
-                duration={500}>
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link"
-                activeClass="active"
-                to="section4"
-                spy="true"
-                smooth="true"
-                offset={-50}
-                duration={500}>
-                Client
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link"
-                activeClass="active"
-                to="section5"
-                spy="true"
-                smooth="true"
-                offset={-50}
-                duration={500}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <MdOutlineStorage id="burger" onClick={toggleNavBar} />
+          {bugerMenu && (
+            <ul className="bugerList">
+              <p id="cancel" onClick={toggleNavBar}>
+                &times;
+              </p>
+              <li>
+                <Link
+                  className="link"
+                  activeClass="active"
+                  to="section1"
+                  spy="true"
+                  smooth="true"
+                  offset={-100}
+                  duration={500}
+                  onClick={toggleNavBar}>
+                  home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link"
+                  activeClass="active"
+                  to="section2"
+                  spy="true"
+                  smooth="true"
+                  offset={-50}
+                  duration={500}
+                  onClick={toggleNavBar}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link"
+                  activeClass="active"
+                  to="section3"
+                  spy="true"
+                  smooth="true"
+                  offset={-40}
+                  duration={500}
+                  onClick={toggleNavBar}>
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link"
+                  activeClass="active"
+                  to="section4"
+                  spy="true"
+                  smooth="true"
+                  offset={-50}
+                  duration={500}
+                  onClick={toggleNavBar}>
+                  Client
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link"
+                  activeClass="active"
+                  to="section5"
+                  spy="true"
+                  smooth="true"
+                  offset={-50}
+                  duration={500}
+                  onClick={toggleNavBar}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          )}
         </div>
       </nav>
     </header>

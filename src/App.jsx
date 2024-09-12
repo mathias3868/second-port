@@ -15,11 +15,11 @@ function App() {
     <>
       <Navigtion />
       <Intro />
-      {/* <About_Me />
+      <About_Me />
       <Skills />
       <Recomendation />
       <Form />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
